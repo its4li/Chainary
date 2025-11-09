@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { BookOpen, Code2, Shield, Layers } from "lucide-react";
 import { Button } from "../components/ui/button";
+import Link from "next/link";
 
 export default function ChainaryDocs() {
   const sections = [
@@ -31,9 +32,11 @@ export default function ChainaryDocs() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-[#0B011A]/80 backdrop-blur-md py-5 border-b border-[#1f1a38] flex justify-between items-center px-10">
         <h1 className="text-2xl font-bold text-[#A78BFA]">Chainary Docs</h1>
-        <Button className="bg-[#00E6A8] hover:bg-[#00c48a] text-black px-6 py-2 rounded-xl">
-          صفحه اصلی
-        </Button>
+        <Link href="/">
+          <Button className="bg-[#00E6A8] hover:bg-[#00c48a] text-black px-6 py-2 rounded-xl">
+            صفحه اصلی
+          </Button>
+        </Link>
       </header>
 
       {/* Hero */}
