@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 import { Code2, BookOpen, Zap, ArrowRight } from "lucide-react";
 
