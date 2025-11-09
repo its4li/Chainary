@@ -42,7 +42,7 @@ export default function ChainaryLanding() {
             <Button className="text-lg px-8 py-3 rounded-2xl transition-all">
               شروع کنید <ArrowRight className="inline ml-2 w-4 h-4" />
             </Button>
-            <Link href="/docs">
+            <Link href="/products">
               <Button variant="outline" className="text-lg px-8 py-3 rounded-2xl">
                 مشاهده مستندات
               </Button>
