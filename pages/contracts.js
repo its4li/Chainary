@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "../components/ui/button";
 import { Code2 } from "lucide-react";
+import FileTree from "../components/FileTree";
 
 export default function ChainaryContracts() {
   return (
@@ -44,6 +45,12 @@ export default function ChainaryContracts() {
           <li>✅ بهینه‌سازی مصرف گس و امنیت بالا</li>
           <li>✅ مناسب برای استارتاپ‌ها و توسعه‌دهندگان ایرانی</li>
         </ul>
+      </section>
+
+      {/* FileTree - ساختار پروژه */}
+      <section className="max-w-3xl mx-auto py-10 px-4">
+        <h2 className="text-2xl font-bold mb-6 text-[#A78BFA] text-center">ساختار پروژه</h2>
+        <FileTree />
       </section>
 
       {/* Sample Code */}
