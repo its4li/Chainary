@@ -44,7 +44,7 @@ export default function ChainaryLanding() {
             </Button>
             <Link href="/products">
               <Button variant="outline" className="text-lg px-8 py-3 rounded-2xl">
-                مشاهده مستندات
+                مشاهده محصولات
               </Button>
             </Link>
           </div>
