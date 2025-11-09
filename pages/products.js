@@ -10,7 +10,7 @@ export default function ChainaryProducts() {
       name: "Chainary Contracts",
       desc: "کتابخانه‌ای از قراردادهای هوشمند آماده و بهینه، برای توسعه سریع‌تر و ایمن‌تر.",
       tag: "Open Source",
-      link: "#"
+      link: "/contracts"
     },
     {
       icon: <Zap className="w-12 h-12 text-[#A78BFA]" />,
@@ -86,9 +86,17 @@ export default function ChainaryProducts() {
             </div>
             <div className="flex flex-col items-center gap-3">
               <span className="text-base text-[#00E6A8] bg-[#1A1033] px-5 py-2 rounded-full border border-[#00E6A8]/30">{p.tag}</span>
-              <Button className="bg-[#A78BFA] hover:bg-[#8B5CF6] text-white w-full rounded-xl mt-2 text-lg py-3">
-                جزئیات بیشتر
-              </Button>
+              {p.link !== "#" ? (
+                <Link href={p.link} className="w-full">
+                  <Button className="bg-[#A78BFA] hover:bg-[#8B5CF6] text-white w-full rounded-xl mt-2 text-lg py-3">
+                    جزئیات بیشتر
+                  </Button>
+                </Link>
+              ) : (
+                <Button className="bg-[#A78BFA] hover:bg-[#8B5CF6] text-white w-full rounded-xl mt-2 text-lg py-3">
+                  جزئیات بیشتر
+                </Button>
+              )}
             </div>
           </motion.div>
         ))}
