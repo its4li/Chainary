@@ -1,4 +1,5 @@
 import { Button } from "../components/ui/button";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Code2, BookOpen, Zap, ArrowRight } from "lucide-react";
 
@@ -41,9 +42,11 @@ export default function ChainaryLanding() {
             <Button className="text-lg px-8 py-3 rounded-2xl transition-all">
               شروع کنید <ArrowRight className="inline ml-2 w-4 h-4" />
             </Button>
-            <Button variant="outline" className="text-lg px-8 py-3 rounded-2xl">
-              مشاهده مستندات
-            </Button>
+            <Link href="/docs">
+              <Button variant="outline" className="text-lg px-8 py-3 rounded-2xl">
+                مشاهده مستندات
+              </Button>
+            </Link>
           </div>
         </motion.div>
         <motion.div
